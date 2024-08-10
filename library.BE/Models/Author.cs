@@ -17,5 +17,7 @@ namespace library.BE.Models
         [StringLength(100, MinimumLength = 3)]
         [DisplayName("Apellido")]
         public string Lastname { get; set; }
+
+        public ICollection<Book>? Books { get; set; }
     }
 }

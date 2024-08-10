@@ -11,5 +11,7 @@ namespace library.BE.Models
         [StringLength(100, MinimumLength = 3)]
         [DisplayName("Nombre de la categoría")]
         public string Name { get; set; }
+
+        public ICollection<Book>? Books { get; set; }
     }
 }
